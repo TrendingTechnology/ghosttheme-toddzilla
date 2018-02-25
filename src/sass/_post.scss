@@ -2,13 +2,77 @@
     POST
 */
 
+.titleintro {
+  margin-bottom: 50px;
+    padding-bottom: 20px;
+    height: 350px;
+    margin-top: -71px;
+    border-radius: 0 0 8px 8px;
+
+  .date,
+  .tag {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    z-index: 3;
+
+    a {
+      display: none;
+      color: #fff;
+      font-weight: 400;
+
+      &:nth-of-type(1) {
+        display: inline;
+      }
+    }
+  }
+
+  .svg-inline--fa.fa-w-16 {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .svg-inline--fa.fa-w-20 {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  h1 {
+    font: 600 4vw 'ovo',Arial,Sans-Serif;
+    line-height: 1;
+    text-align: center;
+    margin-top: -25px!important;
+    margin-bottom: 0!important;
+    padding: 85px 40px 30px;
+    color:white;
+    position: relative;
+    z-index: 3;
+  }
+
+  div:last-child {
+    top:0;
+    z-index: 0;
+    opacity:0.6 !important;
+    border-radius: 0 0 8px 8px;
+  }
+
+}
+
+aside .author_widget {
+  padding-top:0;
+}
+
 .post-template h1 {
   text-align: center;
   margin-top: -25px !important;
     margin-bottom: 11px !important;
     /*background: white;*/
 margin-bottom: 0 !important;
-padding-bottom: 17px;
   /*
       text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black, 0px 0px 4px black, 0px 0px 5px black, 0px 0px 6px black;
       margin: 0 20px !important;
@@ -179,6 +243,7 @@ padding-bottom: 17px;
 
 .header {
     margin: 10px 0 15px 0;
+    display:none;
 
     &.featured {
         display: none;
@@ -186,7 +251,7 @@ padding-bottom: 17px;
 
     h1,
     h1 a {
-      font: 600 3vw 'ovo',Arial,Sans-Serif;
+      font: 600 4vw 'ovo',Arial,Sans-Serif;
       margin: 0 0 5px 0;
       line-height: 1.2;
     }

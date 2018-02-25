@@ -11,6 +11,16 @@
         {{> post_feature_header}}
 
         <div class="container {{post_class}}">
+          <div class="titleintro" {{#if feature_image}} style="position:relative; background-image: url({{img_url feature_image}})" {{/if}}>
+            <h1>{{{title}}}</h1>
+            <div class="date"><i class="far fa-clock"></i>{{date format="MMMM Do, YYYY"}}</div>
+            <div class="tag"><i class="fas fa-tags"></i>
+            {{#foreach tags}}
+                <a href="{{url}}" class="{{name}}">{{name}}</a>
+            {{/foreach}}
+          </div>
+          <div style="position:absolute; height:100%; width:100%; opacity:0.3; background: black;"></div>
+        </div>
 
 
                 {{! WIDGET - RESPONSIVE BLOG INFO }}
@@ -23,12 +33,13 @@
                 <div class="postlist">
                     {{! POST MAIN }}
                     <article class="post standard single">
-                        {{> post_header}}
+
                         <div class="customcontainer">
                         {{> sidebar_post}}
                         <div class="content">
 
                         <div class="postcontents">
+                            {{> post_header}}
                             {{content}}
                         </div>
 

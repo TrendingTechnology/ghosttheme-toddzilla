@@ -4,11 +4,11 @@
 
 .mainnav {
   z-index: 400;
-
+      position: relative;
 
   img {
     float: left;
-    margin: 9px 0;
+    margin: 15px;
     width: 50px;
   }
     .navwrap {
@@ -25,19 +25,21 @@
 
     .toggle {
       display: inline-block;
-      padding: 20px 20px 20px 0;
+      padding: 10px 20px;
       transition: opacity .1s ease-out;
       opacity: .6;
       float:right;
+      color:white;
 
         i {
             font-size: 24px;
             vertical-align: middle;
-            color: #1f1b1b;
+            color: #fff;
         }
 
         a {
-          color:#999;
+          color:#fff;
+          font-size: 30px;
         }
     }
 
@@ -51,10 +53,10 @@
 
 
         a {
-          font: 500 16px 'Montserrat', Arial, Sans-Serif;
+          font: 900 16px 'Montserrat', Arial, Sans-Serif;
           display: block;
           padding: 25px 18px;
-          color:#353535;
+          color:#fff;
         }
 
         li {
