@@ -1,0 +1,31 @@
+{{!
+
+    POST FORMAT - STANDARD
+    - Configuration of this file is not required.
+
+}}
+
+    <article class="post standard">
+        <h1><a href="{{url}}">{{{title}}}</a></h1>
+        <div class="info">
+            <div class="left">
+                {{#if author.profile_image}}<img src="{{author.profile_image}}" alt="author" class="minigravatar">{{/if}}
+                {{author}}
+            </div>
+            <div class="right">
+                <a href="{{url}}" class="date"><i class="fa fa-clock-o"></i>{{date format="MMMM Do, YYYY"}}</a>
+                <span class="tags">
+                    <i class="fa fa-tags"></i>
+                    {{#foreach tags}}
+                        <a href="{{url}}">{{name}}</a>
+                    {{/foreach}}
+                </span>
+            </div>
+        </div>
+        <div class="postcontents index">
+            <p>{{excerpt words="76"}}&hellip;</p>
+        </div>
+        <div class="footer">
+            <a href="{{url}}" class="largesolid orange">Read More</a>
+        </div>
+    </article>

@@ -1,0 +1,27 @@
+{{!
+
+    SIDEBAR - POST
+    - Configuration of this file is not required.
+
+}}
+
+    <div class="alternate">
+        <aside>
+            <div class="widget postinfo_widget {{post_class}}">
+                {{#if @blog.logo}}
+                <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+                {{/if}}
+            </div>
+            {{> widget_author}}
+            <div class="widget social_widget">
+                {{> social_sidebar}}
+            </div>
+            {{> widget_tags}}
+            <div class="widget related_widget">
+              {{> widget_posts}}
+            </div>
+            <div class="widget">
+                <a class="twitter-timeline" data-width="100%" data-height="800" data-link-color="#b15d5d" data-tweet-limit="3" data-chrome="noscrollbar transparent nofooter" href="https://twitter.com/ToddRBirchard">Tweets by ToddRBirchard</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </aside>
+    </div>

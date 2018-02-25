@@ -1,0 +1,12 @@
+{{!
+
+    NAVIGATION
+    - Configuration of this file is not required.
+
+}}
+
+    <ul class="menu">
+        {{#foreach navigation}}
+            <li role="presentation"><i></i><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>

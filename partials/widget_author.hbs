@@ -1,0 +1,21 @@
+{{!
+
+    WIDGET - AUTHOR
+    - Configuration of this file is not required.
+
+}}
+
+    <div class="widget author_widget {{post_class}}">
+      <div class="author-container">
+          {{#if author.profile_image}}
+              <a class="avatar" href="/about/"><img src="{{author.profile_image}}" class="gravatar" alt="{{author.name}}"></a>
+          {{/if}}
+          <h3><a href="/about/">Todd Birchard</a></h3>
+          <div style="clear:right"></div>
+          <span>Sr. Application Specialist</span>
+          <div style="clear:right"></div>
+          <a href="{{author.website}}" class="author_url">{{author.website}}</a>
+          <div style="clear:both"></div>
+      </div>
+        <p>{{author.bio}}</p>
+    </div>

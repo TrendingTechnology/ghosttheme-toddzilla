@@ -1,0 +1,18 @@
+{{! 
+	
+	LOOP
+	- Configuration of this file is not required. 
+
+}}
+
+	{{#foreach posts}}		
+		{{#has tag="feature"}}
+			{{> postformat_feature}}
+		{{/has}}
+		{{#has tag="banner"}}
+			{{> postformat_banner}}
+		{{/has}}
+		{{^has tag="feature, banner"}}
+			{{> postformat_standard}}
+		{{/has}}
+	{{/foreach}}

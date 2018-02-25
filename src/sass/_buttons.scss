@@ -1,0 +1,229 @@
+/*
+    BUTTON STYLES
+*/
+
+.largeoutline,
+.largesolid,
+.smallrounded {
+    font: 500 13px 'Montserrat', Arial, Sans-Serif;
+    display: inline-block
+}
+
+.smallrounded {
+    padding: 6px 20px;
+    transition: background 0.2s ease-out, border 0.2s ease-out, color 0.2s ease-out;
+    color: #fff;
+    border-radius: 4px;
+    background: #2b2626;
+
+    &.blue {
+        color: #fff;
+        background: #3885d5;
+
+        &:hover {
+            background: #2866a6;
+        }
+    }
+
+    &.gray {
+        color: #bfbfbf;
+        border: 1px solid #edf0f1;
+        background: transparent;
+
+        &:hover {
+            color: $accent_color;
+            border-color: #c6c8c8;
+        }
+    }
+
+    &.tall {
+        padding: 8px 20px;
+    }
+}
+
+.largesolid {
+    font: 500 13px 'Montserrat', Arial, Sans-Serif;
+    display: inline-block;
+    padding: 12px 32px;
+    transition: background .2s ease-out;
+    color: #fff;
+    border-radius: 4px;
+    background: $accent_color;
+
+    i {
+        margin: 0 10px 0 0;
+        color: #fff;
+    }
+
+    &.orange {
+        color: #fff;
+        background: $accent_color;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        display: block;
+
+        &:hover {
+            background: darken($accent_dark_color, 10%);
+        }
+    }
+
+    &.twitter {
+        margin-right: 10px;
+        padding: 12px 10px;
+        color: #fff;
+        background: $twitter_color;
+
+        &:hover {
+            background: darken($twitter_color, 10%);
+        }
+    }
+
+    &.facebook {
+        margin-right: 10px;
+        padding: 12px 10px;
+        color: #fff;
+        background: $facebook_color;
+
+        &:hover {
+            background: darken($facebook_color, 10%);
+        }
+    }
+
+    &.reddit {
+        margin-right: 10px;
+        padding: 12px 10px;
+        color: #fff;
+        background: #ff4500;
+
+        &:hover {
+            background: #b23a0e;
+        }
+
+        &i {
+          display: inline-block;
+          height:12px;
+          width:12px;
+          background-image: url(https://s3.us-east-2.amazonaws.com/toddzilla/Social+Icons/reddit.png);
+        }
+    }
+
+    &.hackernews {
+        margin-right: 10px;
+        padding: 12px 10px;
+        color: #fff;
+        background: rgb(255, 102, 0);
+
+        &:hover {
+            background: rgb(205, 89, 11);
+        }
+
+        &i {
+          display: inline-block;
+          height:12px;
+          width:12px;
+          background-image: url(https://s3.us-east-2.amazonaws.com/toddzilla/Social+Icons/HackerNews.png);
+        }
+    }
+
+    &.google {
+        margin-right: 10px;
+        padding: 12px 10px;
+        color: #fff;
+        background: $google_color;
+
+        &:hover {
+            background: darken($google_color, 10%);
+        }
+    }
+}
+
+.recentposts .largesolid i {
+  margin: 0px;
+}
+
+.largeoutline {
+    font: 500 13px 'Montserrat', Arial, Sans-Serif;
+    padding: 12px 20px;
+    transition: border .2s ease-out, color .2s ease-out, background .2s ease-out;
+    color: #c6c8c8;
+    border: 1px solid #edf0f1;
+    border-radius: 4px;
+
+    i {
+        margin-right: 10px;
+        color: #c6c8c8;
+    }
+
+    &.wide {
+        padding: 12px 26px;
+    }
+
+    &.thin {
+        padding: 12px 16px;
+    }
+
+    &.dark {
+        color: #c6c8c8;
+        border-color: #c6c8c8;
+    }
+
+    &.active {
+        color: #3e4041;
+        border-color: #ecedee;
+        background: #ecedee;
+    }
+
+    &:hover {
+        border-color: $accent_color;
+
+        i {
+            color: $accent_color;
+        }
+    }
+}
+
+.tags_list,
+.tags_list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tags_list li a {
+  font: 500 12px 'Montserrat', Arial, Sans-Serif;
+  display: inline-block;
+  float: left;
+  margin: 0 6px 12px 0;
+  padding: 6px 14px;
+  color: grey;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #ececec;
+
+    &:hover {
+        color: #fff;
+        background: $accent_color;
+    }
+}
+
+@media (max-width:600px) {
+  .post-template article .largesolid.orange {
+      display:block;
+      margin-bottom: 25px;
+  }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_outline,
+.social_solid {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    transition: border-color .2s ease-in, color .1s ease-in, background .2s ease-in;
+    text-align: center;
+    position: relative
+}

@@ -1,0 +1,17 @@
+{{!
+
+    WIDGET - BLOG INFO
+    - Configuration of this file is not required.
+
+}}
+
+    <div class="widget info_widget">
+        {{#if @blog.logo}}
+            <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+        {{/if}}
+        <!--<div class="mobile_nav">
+            {{navigation}}
+        </div>-->
+        <p>{{@blog.description}}</p>
+        <div style="clear:both;"></div>
+    </div>

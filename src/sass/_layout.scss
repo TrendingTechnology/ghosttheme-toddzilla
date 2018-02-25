@@ -1,0 +1,152 @@
+/*
+    LAYOUT
+*/
+
+.container {
+  width: 84%;
+  max-width: 1300px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+
+  &.featured {
+        margin-top: 35px;
+  }
+
+    .low {
+        margin-top: 90px;
+    }
+
+    @media (max-width: 1040px) {
+        max-width: 1000px;
+        width: 95%;
+    }
+
+    @media (max-width:860px) {
+      margin: 15px 15px 15px;
+      width: auto;
+
+      .featured {
+        margin-top:0px;
+
+      }
+    }
+}
+
+.content {
+    float: right;
+    width: 74%;
+    margin-left: 1.5%;
+    padding-right: 10px;
+
+    .leftside {
+        float: left;
+        margin-right: 4.5%;
+        margin-left: 0;
+    }
+
+    @media (max-width: 1040px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.alternate {
+    float: left;
+    width: 22%;
+
+    .rightside {
+        float: right;
+        margin-right: 0;
+        margin-left: 4.5%;
+    }
+
+    @media (max-width: 1040px) {
+        display: none;
+    }
+}
+
+.backtotop {
+  position: fixed;
+  right: 19px;
+  bottom: 19px;
+  display: block;
+  padding: 1px 7px 3px;
+  transition: color .2s ease-out,background .2s ease-out;
+  border-radius: 40px;
+  background: #bcbcbc;
+  height: 33px;
+
+    i {
+      color: #f3f2f2;
+      font-size: 14px;
+      padding: 0 2px 1px;
+    }
+
+    &:hover {
+        background: $accent_color;
+
+        i {
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        display: none;
+    }
+}
+
+.postcontents .grid {
+    overflow: hidden;
+    margin: 50px 0;
+
+    .half {
+        width: 47.5%;
+    }
+
+    .left {
+        margin: 0;
+        margin-right: 2.5%;
+    }
+
+    .right {
+        margin: 0;
+        margin-left: 2.5%;
+    }
+
+    p.left,
+    p.right {
+        font-weight: 400;
+    }
+
+    .left *:last-child,
+    .right *:last-child {
+        margin-bottom: 0;
+    }
+
+    .left *:first-child,
+    .right *:first-child {
+        margin-top: 0;
+    }
+
+    p {
+        font-weight: 400;
+        clear: none;
+    }
+
+    p:nth-of-type(1) {
+        font-weight: 400;
+    }
+
+    @media (max-width: 585px) {
+        .left,
+        .right {
+            float: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .right {
+            margin-top: 50px;
+        }
+    }
+}

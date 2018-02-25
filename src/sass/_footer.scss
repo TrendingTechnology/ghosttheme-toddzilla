@@ -1,0 +1,64 @@
+/*
+    FOOTER
+*/
+
+footer {
+    clear: both;
+    padding: 20px 0;
+    background: #fff;
+    overflow: hidden;
+
+    .wrapper {
+        width: 90%;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        font: 100 15px 'Catamaran',  Arial, Sans-Serif;
+        float: left;
+        color: #505858;
+        line-height: 1;
+        padding-top: 6px;
+
+        @media (max-width:1040px) {
+          text-align: center;
+          margin: 0 auto 15px;
+          float: none;
+          padding-top: 0;
+        }
+      }
+
+    a {
+        font: 100 15px 'Catamaran', Arial, Sans-Serif;
+        color: #505858;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .copyright small,
+    .copyright small a {
+        font: 400 15px 'Catamaran', Arial, Sans-Serif;
+        color: #a0adad
+    }
+
+    .sociallinks {
+        float: right;
+
+        a {
+            font-size: 15px;
+            line-height: 24px;
+            margin-left: 10px
+        }
+
+        @media (max-width: 1040px) {
+          float: none;
+          clear: both;
+          overflow: hidden;
+          width: 100%;
+          padding: 30px 0 0;
+          text-align: center;
+          padding-top: 0;
+        }
+    }
+}
