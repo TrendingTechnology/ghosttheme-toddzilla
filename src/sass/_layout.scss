@@ -4,9 +4,10 @@
 
 .container {
   width: 84%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto 20px;
-  overflow: hidden;
+  display:block;
+  overflow: visible !important;
 
   &.featured {
         margin-top: 35px;
@@ -22,7 +23,7 @@
     }
 
     @media (max-width:860px) {
-      margin: 15px 15px 15px;
+      margin: 10px;
       width: auto;
 
       .featured {
@@ -47,6 +48,7 @@
     @media (max-width: 1040px) {
         width: 100%;
         margin: 0;
+        padding-right: 0;
     }
 }
 

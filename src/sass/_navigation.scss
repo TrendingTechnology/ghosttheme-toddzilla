@@ -5,8 +5,11 @@
 .mainnav {
   z-index: 400;
   width: 84%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
+    .navwrap {
+      text-align: right;
+    }
 
     .navwrap:hover .menu,
     .navwrap:hover .toggle {
@@ -18,26 +21,32 @@
       padding: 20px 20px 20px 0;
       transition: opacity .1s ease-out;
       opacity: .6;
+      float:right;
 
         i {
             font-size: 24px;
             vertical-align: middle;
             color: #1f1b1b;
         }
+
+        a {
+          color:#999;
+        }
     }
 
     .menu {
         display: inline-block;
-        margin: 0;
+        margin: 0 10px 0 0;
         padding: 0;
         list-style: none;
         transition: opacity 0.4s ease-out;
         opacity: 0;
 
+
         a {
           font: 500 16px 'Montserrat', Arial, Sans-Serif;
           display: block;
-          padding: 30px 18px;
+          padding: 25px 18px;
           color:#353535;
         }
 
