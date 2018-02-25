@@ -6,9 +6,9 @@
 }}
 
     <div class="widget info_widget">
-        {{#if @blog.logo}}
-            <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
-        {{/if}}
+      {{#unless post}}{{#if @blog.logo}}
+          <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+      {{/if}}{{/unless}}
         <!--<div class="mobile_nav">
             {{navigation}}
         </div>-->

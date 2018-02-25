@@ -6,33 +6,33 @@
 }}
 
     <div class="header {{post_class}}">
-        {{^has tag="banner, feature"}}
-            <h1>{{{title}}}</h1>
-        {{/has}}
+
         {{#has tag="feature"}}
+            <h1>{{{title}}}</h1>
             <div class="largeimage postfeature" {{#if feature_image}} style="background-image: url({{img_url feature_image}})" {{/if}}>
             </div>
         {{/has}}
         {{#has tag="banner"}}
-            <div class="basicfeature postfeature" href="{{url}}" {{#if banner_image}} style="background-image: url({{img_url banner_image}})" {{/if}}></div>
-            <h1>{{{title}}}</h1>
+
+            <div class="basicfeature postfeature" href="{{url}}" {{#if banner_image}} style="background-image: url({{img_url banner_image}})" {{/if}}>
+              <h1>{{{title}}}</h1>
+            </div>
         {{/has}}
 
         <div class="info">
             <div class="left">
-                <a href="{{url}}" class="date"><i class="fa fa-clock-o"></i>{{date format="MMMM Do, YYYY"}}</a>
+                <a href="{{url}}" class="date"><i class="far fa-clock"></i>{{date format="MMMM Do, YYYY"}}</a>
                 <span class="tags">
-                    <i class="fa fa-tags"></i>
+                    <i class="fas fa-tags"></i>
                     {{#foreach tags}}
                         <a href="{{url}}" class="{{name}}">{{name}}</a>
                     {{/foreach}}
                 </span>
             </div>
             <div class="right">
-              <i class="fa fa-eye"></i>
+              <i class="fas fa-eye"></i>
               <div class="right reading-time">
             </div>
         </div>
         </div>
-        <h1>{{{title}}}</h1>
     </div>

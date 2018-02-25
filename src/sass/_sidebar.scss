@@ -135,6 +135,7 @@
 
 /* WIDGET - POST INFO */
 .postinfo_widget {
+  display:none;
     a.logo {
         display: block;
 
@@ -157,7 +158,7 @@
         display: none;
 
         @media (max-width: 1040px) {
-            display: block;
+            /*display: block;*/
             padding: 0 0 7px;
 
             .featured {
@@ -258,7 +259,7 @@
 
 /* WIDGET - AUTHOR */
 aside .author_widget {
-  display: block;
+  display: block !important;
 }
 
 .author_widget {
@@ -510,6 +511,10 @@ aside .widget:last-child {
       font-size: 13px;
       color: #9a9a9a;
     }
+
+    .svg-inline--fa.fa-w-20 {
+          color: #9a9a9a;
+      }
 
   }
 }

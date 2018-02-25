@@ -12,9 +12,7 @@
 
         <div class="container {{post_class}}">
 
-            {{> sidebar_post}}
 
-            <div class="content">
                 {{! WIDGET - RESPONSIVE BLOG INFO }}
                 <div class="widget postinfo_widget inline {{post_class}}">
                     {{#if @blog.logo}}
@@ -26,14 +24,19 @@
                     {{! POST MAIN }}
                     <article class="post standard single">
                         {{> post_header}}
+                        <div class="customcontainer">
+                        {{> sidebar_post}}
+                        <div class="content">
+
                         <div class="postcontents">
                             {{content}}
                         </div>
 
-                    </article>
+
                     {{> post_footer}}
+
+                    </article>
                 </div>
-            </div>
             <div style="clear:both"></div>
             <div class="recentposts">
                    <div class="recent-container">
@@ -42,7 +45,7 @@
                                {{#foreach recents}}
                                    <div class="recent-post">
                                            <div class="recent-image" style="background-image: url({{img_url feature_image}});">
-                                             
+
                                              {{#tags limit="1"}}<a class="tag">{{name}}</a>{{/tags}}
                                               <a href="{{url}}"><h5 class="recenttitle">{{title}}</h5></a>
                                            </div>
@@ -50,7 +53,7 @@
                                        <p class="recentdescription">{{excerpt}}</p>
                                        <div class="recentpost-footer">
                                          <div class="recentposttag">
-                                           <i class="fa fa-tags"></i>
+                                           <i class="fas fa-tags"></i>
                                            {{#tags limit="1"}}<a href="{{url}}">{{name}}</a>{{/tags}}
                                          </div>
                                          <a href="{{url}}" class="largesolid orange">Read <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -62,6 +65,7 @@
                </div>
                {{! WIDGET - AUTHOR INFO }}
                {{> widget_author}}
+        </div>
         </div>
 
 

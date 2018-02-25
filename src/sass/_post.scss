@@ -2,6 +2,25 @@
     POST
 */
 
+.post-template h1 {
+  text-align: center;
+  margin-top: -25px !important;
+    margin-bottom: 11px !important;
+    /*background: white;*/
+margin-bottom: 0 !important;
+padding-bottom: 17px;
+  /*
+      text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black, 0px 0px 4px black, 0px 0px 5px black, 0px 0px 6px black;
+      margin: 0 20px !important;
+      padding: 13px 30px !important;
+
+      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));*/
+    }
+
+    .post-template .navwrap {
+      /*background: white;*/
+    }
+
 .featureheader {
   position: relative;
   display: none;
@@ -97,7 +116,7 @@
     }
 
     .tags {
-        * {
+        a {
             display: none;
         }
 
@@ -159,7 +178,7 @@
 }
 
 .header {
-    margin: 0 0 15px 0;
+    margin: 10px 0 15px 0;
 
     &.featured {
         display: none;
@@ -167,15 +186,10 @@
 
     h1,
     h1 a {
-      font: 600 3.3vmin ovo,Arial,Sans-Serif;
-line-height: 1.2;
-      display: block;
-      margin-top: 0;
+      font: 600 3vw 'ovo',Arial,Sans-Serif;
+      margin: 0 0 5px 0;
+      line-height: 1.2;
     }
-}
-
-.post-template .header h1 {
-    margin-top: 20px !important
 }
 
 .postfooter {
@@ -272,7 +286,8 @@ line-height: 1.2;
 
 .recentposts {
   width: 100%;
-  margin-top: 0px;
+    margin-top: 0;
+    margin: 0 auto 30px;
 
   h3 {
     margin-top: 25px !important;
@@ -412,7 +427,11 @@ line-height: 1.2;
       padding: 0 20px;
       height: 120px;
       overflow: hidden;
-      margin-bottom: 65px;
+      margin-bottom: 70px;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
 
       @media (max-width: 900px) {
         display: none;
@@ -437,10 +456,13 @@ line-height: 1.2;
 
         /* display first tag */
         a:nth-of-type(1),
-        i {
+        .svg-inline--fa:nth-of-type(1),
+        .svg-inline--fa:nth-of-type(1) path {
             display:inline !important;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 400;
+            color: #ababab;
+            margin-right: 5px;
 
             @media (max-width: 1040px) {
               font-size: 11px;
@@ -457,11 +479,8 @@ line-height: 1.2;
       line-height: 1.2;
       margin: 0;
       font-size: 18px;
-      height: 60px;
       font-weight: 600;
     font-size: 1.6vmin;
-    height: 60px;
-    text-align: center;
 
       @media (max-width: 900px) {
         height: auto!important;
@@ -485,6 +504,16 @@ line-height: 1.2;
         margin-right: 20px;
         margin-bottom: 20px;
         padding: 12px 25px;
+        color: #b15d5d;
+        background: white;
+        border: 1px solid #b15d5d;
+        transition: all .2s ease-out;
+            font-weight: 800;
+
+        &:hover {
+          color: white;
+          background: #b15d5d;
+        }
 
         i {
              margin-left: 2px;

@@ -347,26 +347,26 @@ h1 a {
 
 h2,
 h2 a {
-    font: 600 34px 'Montserrat', Arial, Sans-Serif;
+    font: 200 34px 'ovo', Arial, Sans-Serif;
     line-height: 36px
 }
 
 h3,
 h3 a {
-    font: 500 28px 'Montserrat', Arial, Sans-Serif;
+    font: 200 28px 'ovo', Arial, Sans-Serif;
     line-height: 36px
 }
 
 h4,
 h4 a {
-    font: 500 24px 'Montserrat', Arial, Sans-Serif;
+    font: 200 24px 'ovo', Arial, Sans-Serif;
     line-height: 1;
     margin: 20px 0 0;
 }
 
 h5,
 h5 a {
-    font: 500 20px 'Montserrat', Arial, Sans-Serif;
+    font: 500 20px 'ovo', Arial, Sans-Serif;
     line-height: 36px
 }
 
@@ -471,12 +471,14 @@ hr {
 }
 
 .left {
-    float: left
+    float: left;
+    color: #bebebe;
 }
 
 .content,
 .right {
-    float: right
+    float: right;
+    color: #bebebe;
 }
 
 input {

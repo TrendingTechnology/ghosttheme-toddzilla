@@ -4,11 +4,18 @@
 
 .mainnav {
   z-index: 400;
-  width: 84%;
-  max-width: 1200px;
-  margin: auto;
+
+
+  img {
+    float: left;
+    margin: 9px 0;
+    width: 50px;
+  }
     .navwrap {
       text-align: right;
+      width: 84%;
+    max-width: 1200px;
+    margin: auto;
     }
 
     .navwrap:hover .menu,

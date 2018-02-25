@@ -24,7 +24,7 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="alternate" type="application/rss+xml" href="{{@blog.url}}/rss/">
+    <link rel="alternate" type="application/rss+xml" href="{{@blog.url}}//rss/">
     <link rel="prefetch" href="{{@blog.url}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/theme.min.css"}}" />
@@ -38,6 +38,7 @@
     <nav class="mainnav {{#post}}{{post_class}}{{/post}}">
         <a id="top"></a>
         <div class="navwrap">
+            {{#if post}}<a href="{{@blog.url}}"><img src="{{@blog.url}}{{@blog.cover_image}}"></a>{{/if}}
             <div class="toggle"><a href="#"><i class="fa fa-bars"></i></a></div>
             {{navigation}}
         </div>

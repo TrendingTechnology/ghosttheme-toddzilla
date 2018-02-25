@@ -7,12 +7,13 @@
 
     <div class="alternate">
         <aside>
+
             <div class="widget postinfo_widget {{post_class}}">
                 {{#if @blog.logo}}
                 <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
                 {{/if}}
-            </div>
-            {{> widget_author}}
+            </div>    
+              {{> widget_author}}
             <div class="widget social_widget">
                 {{> social_sidebar}}
             </div>
