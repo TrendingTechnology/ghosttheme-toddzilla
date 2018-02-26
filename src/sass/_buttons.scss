@@ -142,12 +142,13 @@
 }
 
 .largeoutline {
-    font: 500 13px 'Montserrat', Arial, Sans-Serif;
-    padding: 12px 20px;
-    transition: border .2s ease-out, color .2s ease-out, background .2s ease-out;
-    color: #c6c8c8;
-    border: 1px solid #edf0f1;
-    border-radius: 4px;
+  font: 500 18px 'Montserrat',Arial,Sans-Serif;
+  padding: 12px 20px;
+  transition: border .2s ease-out,color .2s ease-out,background .2s ease-out;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.03);
 
     i {
         margin-right: 10px;

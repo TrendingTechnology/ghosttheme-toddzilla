@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/theme.min.css"}}" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400|Montserrat:300,400|Ovo|Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400|Montserrat:300,400,700,800,900|Ovo|Sanchez|Quattrocento:400,700" rel="stylesheet">
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body class="{{body_class}}">
@@ -38,7 +38,7 @@
     <nav class="mainnav {{#post}}{{post_class}}{{/post}}">
         <a id="top"></a>
         <div class="navwrap">
-            {{#if post}}<a href="{{@blog.url}}"><img src="{{@blog.url}}{{@blog.cover_image}}"></a>{{/if}}
+            {{#is "post"}}<a class="navlogo" href="{{@blog.url}}"><img src="{{@blog.url}}{{@blog.cover_image}}"></a>{{/is}}
             <div class="toggle"><a href="#"><i class="fa fa-bars"></i></a></div>
             {{navigation}}
         </div>

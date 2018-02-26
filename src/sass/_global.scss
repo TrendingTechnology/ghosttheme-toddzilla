@@ -472,13 +472,17 @@ hr {
 
 .left {
     float: left;
-    color: #bebebe;
+    color: #797979;
+
+    .svg-inline--fa {
+      margin-right: 5px;
+    }
 }
 
 .content,
 .right {
     float: right;
-    color: #bebebe;
+    color: #797979;
 }
 
 input {

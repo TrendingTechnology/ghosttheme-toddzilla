@@ -6,16 +6,23 @@
   z-index: 400;
       position: relative;
 
-  img {
-    float: left;
+  .navlogo {
     margin: 15px;
     width: 50px;
+    position: absolute;
+    left: 0;
+    display: block;
+  }
+
+  img {
+    width:100%;
   }
     .navwrap {
       text-align: right;
       width: 84%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
     }
 
     .navwrap:hover .menu,
@@ -38,7 +45,7 @@
         }
 
         a {
-          color:#fff;
+          color:#dcdcdc;
           font-size: 30px;
         }
     }
@@ -51,11 +58,10 @@
         transition: opacity 0.4s ease-out;
         opacity: 0;
 
-
         a {
-          font: 900 16px 'Montserrat', Arial, Sans-Serif;
+          font: 700 18px 'Montserrat', Arial, Sans-Serif;
           display: block;
-          padding: 25px 18px;
+          padding: 23px 18px;
           color:#fff;
         }
 
@@ -176,8 +182,15 @@
 /* Save Nav on Static Pages */
 .page-template .mainnav {
     position: absolute;
-    top: 27px;
-    left: 130px;
+    top: 31px;
+    left: 132px;
+
+    .navwrap {
+      text-align: left;
+      width: auto;
+      max-width: none;
+    }
+
 
     .menu {
         opacity: 1;
@@ -251,7 +264,7 @@
 
 .pagination {
     overflow: hidden;
-    padding: 25px 0 5px;
+    padding: 20px 5px;
     text-align: center;
 
     a:hover {
@@ -639,4 +652,12 @@
 
 .page-template .mainnav .toggle {
     display: none;
+}
+
+.home-template {
+  .toggle a,
+  .mainnav .menu a {
+    color: #828282;
+  }
+
 }

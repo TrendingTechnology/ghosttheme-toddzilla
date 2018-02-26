@@ -6,13 +6,13 @@
 }}
 
     <div class="featureheader {{post_class}}">
-      <h1>{{{title}}}</h1>
+
         <div class="background" {{#if feature_image}} style="background-image: url({{img_url feature_image}})" {{/if}}></div>
         <a href="{{@blog.url}}" class="logo"><img src="{{@blog.cover_image}}" alt="{{@blog.title}}"></a>
         <div class="shadow2"></div>
         <div class="wrapper">
             <div class="title">
-
+              <h1>{{{title}}}</h1>
                 <div class="info">
                     <div class="left">
                         {{#if author.profile_image}}<img src="{{author.profile_image}}" alt="author" class="minigravatar">{{/if}}
