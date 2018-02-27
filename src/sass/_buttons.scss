@@ -5,7 +5,7 @@
 .largeoutline,
 .largesolid,
 .smallrounded {
-    font: 500 13px 'Montserrat', Arial, Sans-Serif;
+    font: 500 15px 'Montserrat', Arial, Sans-Serif;
     display: inline-block
 }
 
@@ -44,7 +44,7 @@
 .largesolid {
     font: 500 13px 'Montserrat', Arial, Sans-Serif;
     display: inline-block;
-    padding: 12px 32px;
+    padding: 12px 35px;
     transition: background .2s ease-out;
     color: #fff;
     border-radius: 4px;
@@ -145,10 +145,15 @@
   font: 500 18px 'Montserrat',Arial,Sans-Serif;
   padding: 12px 20px;
   transition: border .2s ease-out,color .2s ease-out,background .2s ease-out;
-  color: #8c8c8c;
-  border: 1px solid #8c8c8c;
+  color: #585858;
+  border: 1px solid #949494;
   border-radius: 4px;
-  background: rgba(0,0,0,0.03);
+  background: rgba(0,0,0,0.1);
+
+  .svg-inline--fa {
+    color: #bbbbbb;
+    float: right;
+  }
 
     i {
         margin-right: 10px;
@@ -157,6 +162,7 @@
 
     &.wide {
         padding: 12px 26px;
+        width: 40%;
     }
 
     &.thin {
@@ -164,8 +170,8 @@
     }
 
     &.dark {
-        color: #c6c8c8;
-        border-color: #c6c8c8;
+        color: #949494;
+        border-color: #797979;
     }
 
     &.active {

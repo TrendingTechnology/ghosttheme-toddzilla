@@ -22,7 +22,6 @@
     .left a,
     .right a {
       color: #797979 !important;
-      margin-right: 10px;
       font-weight: 500;
       font: 400 17px 'Catamaran',Arial,Sans-Serif;
 
@@ -60,10 +59,8 @@
   }
 
   article .footer .largesolid.orange {
-    padding: 9px 0!important !important;
     border-radius: 6px;
     font-family: montserrat;
-    width: 27%;
     float: right;
     font-weight: 500;
     font-size: 18px;
@@ -451,21 +448,6 @@
     background-size: cover;
   }
 
-  blockquote {
-    position: relative;
-    z-index: 200;
-    margin: 0;
-    padding: 0;
-
-    p {
-      font: 200 32px 'Lato', Arial, Sans-Serif;
-      line-height: 60px;
-      margin: 0;
-      padding: 0;
-      color: #fff;
-    }
-  }
-
   cite {
     font: 600 22px 'Catamaran', 'Open Sans', Arial, Sans-Serif;
     line-height: 30px;
@@ -510,6 +492,8 @@
         margin-right: 5px;
       }
 
+
+
       .tags * {
         display: none;
 
@@ -534,6 +518,13 @@
       width: auto;
       color: #bebebe;
     }
+
+    @media(max-width: 800px) {
+      .left a {
+        display:none;
+      }
+    }
+
   }
 
   .author {
@@ -545,10 +536,14 @@
   }
 }
 
-.postcontents a {
-  font: 100 19px 'Catamaran',Arial,Sans-Serif;
-  color: #b15d5d;
-}
+.postcontents {
+    padding: 0 10px;
+
+    a {
+      font: 100 19px 'Catamaran',Arial,Sans-Serif;
+      color: #b15d5d;
+    }
+  }
 /* see above */
 /* HOMEPAGE (AND ASSOCIATED) ONLY: Link Color under post */
 .postlist article .info .fa-eye {
@@ -601,11 +596,12 @@
     padding: 0 !important;
   }
 }
+/*
 @media (max-width: 600px) {
   a {
     margin-right: 0 !important;
   }
-}
+}*/
 @media (max-width: 260px) {
   .postlist article .right {
     display: none;
@@ -622,7 +618,6 @@
     z-index: 10;
     display: block;
     padding: 0 20px 10px;
-    border-radius: 5px;
 
     .left a {
       color: white;
