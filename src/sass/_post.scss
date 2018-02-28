@@ -4,7 +4,7 @@
 .titleintro {
   margin-bottom: 20px;
   padding: 85px 20px;
-  margin-top: -71px;
+  margin-top: -80px;
   border-radius: 0 0 8px 8px;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
   }
 
   @media(max-width: 800px) {
-    padding: 100px 20px 60px;
+    /*padding: 100px 20px 60px;*/
   }
 
   .date,
@@ -104,7 +104,7 @@
     }
 
     @media(max-width: 700px) {
-      width: 85%;
+      width: 95%;
       font: 500 20px 'Quattrocento',Arial,Sans-Serif;
     }
   }
@@ -148,7 +148,7 @@ aside .author_widget {
   position: relative;
   display: none;
   width: 100%;
-  height: 85%;
+  height: 60%;
   background-color: #141313;
   padding: 20px;
 
@@ -471,9 +471,13 @@ aside .author_widget {
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     transition: opacity 0.3s ease-out;
+
     @media (max-width: 600px) {
       box-shadow: inset -200px -200px 5px rgba(0,0,0,.4);
       border-radius: 4px;
+      width:35%;
+      float: right;
+          border-radius: 0 8px 8px 0;
     }
 
     .recenttitle {
@@ -488,8 +492,9 @@ aside .author_widget {
       text-shadow: -1px 1px rgba(0, 0, 0, 0.2), 1px -1px rgba(0, 0, 0, 0.2), 1px 1px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.2);
       display: none;
       margin: 0;
+
       @media (max-width: 600px) {
-        display: block;
+        /*display: block;*/
       }
     }
 
@@ -501,7 +506,7 @@ aside .author_widget {
       display: none;
       float: right;
       @media (max-width: 600px) {
-        display: block;
+        display: none;
         /* background: rgba(0, 0, 0, .5); */
         padding: 5px 10px;
         border-radius: 0 0 0 5px;
@@ -530,7 +535,7 @@ aside .author_widget {
     line-height: 23px;
     padding: 0 20px;
     overflow: hidden;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -564,14 +569,22 @@ aside .author_widget {
       display: inline !important;
       font-size: 14px;
       font-weight: 400;
-      color: #ababab;
+      color: #7d7d7d;
       margin-right: 5px;
       @media (max-width: 1040px) {
         font-size: 11px;
       }
     }
     @media (max-width: 600px) {
-      display: none;
+      display: block;
+      padding: 0 0 15px 20px;
+
+      a,
+      .svg-inline--fa {
+        font-size: 14px !important;
+        color: #777777 !important;
+        font-weight: 500 !important;
+      }
     }
   }
 
@@ -579,7 +592,6 @@ aside .author_widget {
     padding: 15px 15px 0;
     line-height: 1.05;
     margin: 0;
-    font-weight: 600;
     font-size: 2.6ch;
     @media (max-width: 900px) {
       height: auto!important;
@@ -589,9 +601,13 @@ aside .author_widget {
       overflow: hidden;
     }
     @media (max-width: 600px) {
-      width: 78%;
-      text-align: left !important;
-      display: none !important;
+      text-align: left!important;
+    display: block;
+    float: left;
+    width: 57%;
+    line-height: 1.2;
+    font: 200 24px 'ovo',Arial,Sans-Serif !important;
+    padding: 22px 0 0 20px;
     }
   }
 

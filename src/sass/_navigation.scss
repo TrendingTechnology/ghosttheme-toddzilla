@@ -85,7 +85,7 @@
     }
 
     a {
-      font: 700 18px 'Montserrat', Arial, Sans-Serif;
+      font: 500 16px 'Montserrat', Arial, Sans-Serif;
       display: block;
       padding: 23px 18px;
       color: #fff;
@@ -671,5 +671,9 @@ left: 0;
   .mainnav .menu a,
   .toggle a {
     color: #828282;
+  }
+
+  nav {
+    display: none;
   }
 }

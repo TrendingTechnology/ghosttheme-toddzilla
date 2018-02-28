@@ -356,13 +356,13 @@
 .paged .postlist article,
 .tag-template .postlist article {
   border-radius: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   background-color: #fff;
   border: 1px solid #dedede;
   box-shadow: 0 0 20px #e8e8e8;
 
   p {
-    padding: 0 30px;
+    padding: 0 20px;
 
     &.light {
       font-weight: 400;
@@ -552,8 +552,8 @@
 
 .postlist article .footer .left a,
 .postlist article .info a {
-  color: #9c9c9c;
-  font-weight: 100;
+  color: #888888;
+    font-weight: 200;;
 }
 
 .postlist article .info a:hover {

@@ -10,12 +10,11 @@
           {{#if author.profile_image}}
               <a class="avatar" href="/about/"><img src="{{author.profile_image}}" class="gravatar" alt="{{author.name}}"></a>
           {{/if}}
-          <h3><a href="/about/">Todd Birchard</a></h3>
-          <div style="clear:right"></div>
-          <span>Sr. Application Specialist</span>
-          <div style="clear:right"></div>
-          <a href="{{author.website}}" class="author_url">{{author.website}}</a>
-          <div style="clear:both"></div>
+          <div class="details">
+            <h3><a href="/about/">Todd Birchard</a></h3>
+            <span>Sr. Application Architect</span>
+            <a href="{{author.website}}" class="author_url">{{author.website}}</a>
+          </div>
       </div>
         <p>{{author.bio}}</p>
     </div>

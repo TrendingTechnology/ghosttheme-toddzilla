@@ -19,7 +19,7 @@
 
     @media (max-width: 1040px) {
         max-width: 1000px;
-        width: 95%;
+        width: 96%;
     }
 
     @media (max-width:860px) {
@@ -54,7 +54,7 @@
 }
 
 .alternate {
-  width: 250px;
+  width: 300px;
     flex-shrink: 0;
 
     .rightside {
@@ -82,6 +82,7 @@
   border-radius: 40px;
   background: #bcbcbc;
   height: 33px;
+  color:white;
 
     i {
       color: #f3f2f2;

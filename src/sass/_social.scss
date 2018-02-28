@@ -13,7 +13,7 @@
     border-radius: 60px;
 
     .svg-inline--fa {
-        vertical-align: -4px;
+        vertical-align: -7px !important;
     }
 
     &.twitter {
@@ -184,6 +184,62 @@
         }
     }
 
+    &.meetup {
+        border-color: $meetup_color;
+
+        .svg-inline--fa {
+            color: $meetup_color;
+        }
+
+        &:hover {
+            background: $meetup_color;
+        }
+    }
+
+
+    &.medium {
+        border-color: $medium_color;
+
+        .svg-inline--fa {
+            color: $medium_color;
+        }
+
+        &:hover {
+            background: $medium_color;
+        }
+    }
+
+
+    &.pocket {
+        border-color: $pocket_color;
+
+        .svg-inline--fa {
+            color: $pocket_color;
+        }
+
+        &:hover {
+            background: $pocket_color;
+        }
+    }
+
+
+
+    &.codecademy {
+        border-color: $codecademy_color;
+
+        .svg-inline--fa {
+            color: $codecademy_color;
+        }
+
+        &:hover {
+            background: $codecademy_color;
+        }
+    }
+
+
+
+
+
     &:hover .svg-inline--fa {
         color: #fff;
     }
@@ -199,7 +255,7 @@
     border-radius: 60px;
 
     .svg-inline--fa {
-        vertical-align: -7px;
+        vertical-align: -10px !important;
     }
 
     &.twitter {
@@ -348,14 +404,72 @@
     }
 
     &.quora {
-        border-color: $quora_color;
+        background: $quora_color;
 
         .svg-inline--fa {
             color: #fff;
         }
 
         &:hover {
-            background: $quora_color;
+            background: #fff;
+            color: $quora_color;
+        }
+    }
+
+
+    &.meetup {
+        background: $meetup_color;
+
+        .svg-inline--fa {
+            color: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+            color: $meetup_color;
+        }
+    }
+
+
+    &.medium {
+        background: $medium_color;
+
+        .svg-inline--fa {
+            color: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+            color: $medium_color;
+        }
+    }
+
+
+    &.pocket {
+        background: $pocket_color;
+
+        .svg-inline--fa {
+            color: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+            color: $pocket_color;
+        }
+    }
+
+
+
+    &.codecademy {
+        background: $codecademy_color;
+
+        .svg-inline--fa {
+            color: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+            color: $codecademy_color;
         }
     }
 

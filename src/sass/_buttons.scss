@@ -68,7 +68,6 @@
     }
 
     &.twitter {
-        margin-right: 10px;
         padding: 12px 10px;
         color: #fff;
         background: $twitter_color;
@@ -79,7 +78,6 @@
     }
 
     &.facebook {
-        margin-right: 10px;
         padding: 12px 10px;
         color: #fff;
         background: $facebook_color;
@@ -90,7 +88,6 @@
     }
 
     &.reddit {
-        margin-right: 10px;
         padding: 12px 10px;
         color: #fff;
         background: #ff4500;
@@ -108,7 +105,6 @@
     }
 
     &.hackernews {
-        margin-right: 10px;
         padding: 12px 10px;
         color: #fff;
         background: rgb(255, 102, 0);
@@ -126,7 +122,6 @@
     }
 
     &.google {
-        margin-right: 10px;
         padding: 12px 10px;
         color: #fff;
         background: $google_color;
@@ -145,13 +140,12 @@
   font: 500 18px 'Montserrat',Arial,Sans-Serif;
   padding: 12px 20px;
   transition: border .2s ease-out,color .2s ease-out,background .2s ease-out;
-  color: #585858;
-  border: 1px solid #949494;
+  color: #fff;
   border-radius: 4px;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.3);
 
   .svg-inline--fa {
-    color: #bbbbbb;
+    color: #fff;
     float: right;
   }
 
@@ -170,7 +164,7 @@
     }
 
     &.dark {
-        color: #949494;
+        color: #fff;
         border-color: #797979;
     }
 
@@ -202,7 +196,7 @@
   float: left;
   margin: 0 6px 12px 0;
   padding: 6px 14px;
-  color: grey;
+  color: #656565;
   border-radius: 4px;
   background: #fff;
   border: 1px solid #ececec;
@@ -228,9 +222,13 @@
 .social_outline,
 .social_solid {
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     transition: border-color .2s ease-in, color .1s ease-in, background .2s ease-in;
     text-align: center;
-    position: relative
+    position: relative;
+
+    .svg-inline--fa {
+      vertical-align: -10px;
+    }
 }
