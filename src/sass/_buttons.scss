@@ -145,8 +145,8 @@
   background: rgba(0,0,0,0.3);
 
   .svg-inline--fa {
-    color: #fff;
-    float: right;
+        color: #b3b3b3;
+    margin-left: 10px;
   }
 
     i {
@@ -156,7 +156,7 @@
 
     &.wide {
         padding: 12px 26px;
-        width: 40%;
+        /*width: 40%;*/
     }
 
     &.thin {
@@ -164,8 +164,19 @@
     }
 
     &.dark {
-        color: #fff;
-        border-color: #797979;
+      color: #2b2b2b;
+      border-color: #a2a2a2;
+      border-radius: 20px;
+      height: 70px;
+      /* width: 15%; */
+      background: rgba(134, 134, 134, 0.3);
+
+      .svg-inline--fa {
+        margin: 11px auto;
+      font-size: 24px;
+      }
+
+
     }
 
     &.active {

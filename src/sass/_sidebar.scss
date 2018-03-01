@@ -26,6 +26,12 @@
     display: block;
     margin: 0 auto 10px;
 
+    @media(max-width: 1040px) {
+      margin: 30px auto 0!important;
+      float: none;
+      width: 40%;
+    }
+
     img {
       display: inline-block;
       max-width: 100%;
@@ -63,6 +69,10 @@
       margin: 0;
       padding: 0;
     }
+
+
+
+
     @media (max-width:600px) {
       display: block !important;
     }
@@ -80,17 +90,18 @@
 .content .info_widget {
   display: none;
   margin-bottom: 20px;
-
+/*
   .logo {
     float: left;
     width: 57%;
     margin: 0;
-  }
+  }*/
   @media (max-width:1040px) {
     display: block;
     padding: 0;
     border: 0;
     margin-top: 10px;
+        margin-bottom: 0;
 
     p {
       font: 400 19px 'Catamaran',Arial,Sans-Serif;
@@ -99,6 +110,7 @@
       width: 41%;
       float: right;
       padding: 5px 0 0;
+      display:none;
     }
   }
   @media (max-width:800px) {

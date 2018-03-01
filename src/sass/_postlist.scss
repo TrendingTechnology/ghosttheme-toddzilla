@@ -71,6 +71,7 @@
     border: 1px solid #b15d5d;
     color: #b15d5d;
     transition: all 0.2s ease-out;
+        padding: 12px 60px;
 
 
     &:hover {
@@ -580,7 +581,7 @@
 
 .home-template .postlist article .footer .left,
 .paged .postlist article .footer .left {
-  margin-top: 8px;
+  margin-top: 12px;
   @media (max-width: 1040px) {
     padding: 0;
   }
