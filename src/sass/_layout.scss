@@ -2,6 +2,44 @@
     LAYOUT
 */
 
+header {
+    background: url(https://s3.us-east-2.amazonaws.com/toddzilla/General/bg2.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0;
+    display:none;
+        border-bottom: 1px solid #dedede;
+          margin-bottom: 40px;
+
+    @media (max-width: 1040px) {
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    P {
+      display: none;
+    }
+
+    .widget {
+      border:0;
+      padding:0;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      min-width: 250px;
+
+      img {
+        width:100%;
+        margin-bottom: -10px;
+      }
+    }
+}
+
+
 .container {
   width: 84%;
   max-width: 1200px;
@@ -23,7 +61,7 @@
     }
 
     @media (max-width: 600px) {
-        width: 96%;
+        width: 92%;
     }
 
     @media (max-width:860px) {
@@ -81,12 +119,12 @@
   right: 19px;
   bottom: 19px;
   display: block;
-  padding: 1px 7px 3px;
+  padding: 10px 17px;
   transition: color .2s ease-out,background .2s ease-out;
   border-radius: 40px;
-  background: #bcbcbc;
-  height: 33px;
-  color:white;
+  background: #dcdcdc;
+  /* height: 33px; */
+  color: #fff;
 
     i {
       color: #f3f2f2;

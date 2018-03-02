@@ -464,12 +464,15 @@
 .home-template .inlinemenu,
 .paged .inlinemenu {
   @media (max-width: 1040px) {
-    width: auto;
-    margin: 0 15% 20px;
+    width: 100%;
+    margin: 0;
+        margin-bottom: 40px;
+    padding-right: 0;
   }
   @media (max-width: 600px) {
     width: auto;
-    margin: 10px auto 15px;
+    margin: 20px auto;
+    display: block;
   }
 }
 
@@ -481,9 +484,9 @@
 }
 
 .inlinemenu {
-
+  display: none;
   .horizontalnav {
-    display: block;
+    display: none;
 
   }
 
@@ -531,21 +534,27 @@
   }
 
   .horizontalnav .menu {
-    padding:0;
-    justify-content: space-around;
-    width:100%;
-    background:none;
+    display: none;
+    position: absolute;
+    width: 75%;
+    margin: -90px auto 0;
+    font-weight: 900;
+    background: 0 0;
+    left: 0;
+    right: 0;
     li{
       text-align: center;
       display: inline-block;
 
       a {
-         font: 500 18px Montserrat,Arial,Sans-Serif;
+         font: 700 22px Montserrat,Arial,Sans-Serif;
+         color: #323232;
       }
     }
 
     @media(max-width:1040px){
       display: flex;
+          justify-content: space-around;
     }
 
     @media(max-width: 600px) {
@@ -575,9 +584,7 @@
     width: 93%;
     margin: 20px auto;
   }
-  @media (max-width: 860px) {
-    display: block;
-  }
+
   @media (max-width: 600px) {
     width: auto;
     margin: 10px 20px;
@@ -697,15 +704,12 @@ left: 0;
   display: none;
 }
 
-.home-template {
+.home-template,
+.paged {
   .mainnav .menu a,
   .toggle a {
     color: #5a5a5a;
   }
 
-  @media(max-width: 1040px) {
-    .toggle {
-      display:none;
-    }
-  }
+
 }

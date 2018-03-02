@@ -27,9 +27,9 @@
     margin: 0 auto 10px;
 
     @media(max-width: 1040px) {
-      margin: 30px auto 0!important;
+      margin: 0 auto 0!important;
       float: none;
-      width: 40%;
+      background: rgba(255, 255, 255, 0.6);
     }
 
     img {
@@ -43,6 +43,7 @@
     }
     @media (max-width:600px) {
       margin: 0 auto 11px;
+      /*min-width: 300px;*/
     }
   }
 

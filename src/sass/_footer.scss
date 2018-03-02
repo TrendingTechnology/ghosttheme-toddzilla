@@ -61,5 +61,14 @@ footer {
           text-align: center;
           padding-top: 0;
         }
+
+        @media (max-width: 600px) {
+          width: 80%;
+          margin: auto;
+
+          a {
+            margin: 0 7px 14px 7px;
+          }
+      }
     }
 }
