@@ -59,8 +59,8 @@
   }
 
   article .footer .largesolid.orange {
-    border-radius: 6px;
-    font-family: montserrat;
+    border-radius: 10px;
+    font-family: 'montserrat';
     float: right;
     font-weight: 500;
     font-size: 18px;
@@ -71,10 +71,10 @@
     border: 1px solid #b15d5d;
     color: #b15d5d;
     transition: all 0.2s ease-out;
-    padding: 12px 60px;
+    padding: 15px 60px;
 
     @media (max-width:600px) {
-          padding: 8px 28px;
+          padding: 15px 28px;
     }
 
 
@@ -226,7 +226,7 @@
     }
     @media (max-width: 600px) {
       padding: 0 25px !important;
-      height: 50px;
+      height: 60px;
       margin-bottom: 30px;
       margin-top: 10px;
     }
@@ -496,13 +496,12 @@
     font-weight: 600;
     overflow: hidden;
     padding: 25px 40px 0 30px;
+    margin-top: 20px;
 
     .left {
       .svg-inline--fa {
         margin-right: 5px;
       }
-
-
 
       .tags * {
         display: none;
@@ -563,7 +562,7 @@
 .postlist article .footer .left a,
 .postlist article .info a {
   color: #888888;
-    font-weight: 200;;
+    font-weight: 200;
 }
 
 .postlist article .info a:hover {
@@ -590,7 +589,7 @@
 
 .home-template .postlist article .footer .left,
 .paged .postlist article .footer .left {
-  margin-top: 12px;
+  margin-top: 14px;
   @media (max-width: 1040px) {
     padding: 0;
   }

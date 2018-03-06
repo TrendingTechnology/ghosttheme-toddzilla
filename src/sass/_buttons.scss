@@ -145,7 +145,7 @@
   background: rgba(0,0,0,0.3);
 
   .svg-inline--fa {
-        color: #b3b3b3;
+    color: #b3b3b3;
     margin-left: 10px;
   }
 
@@ -164,11 +164,10 @@
     }
 
     &.dark {
-      color: #2b2b2b;
+      color: #848484;
       border-color: #a2a2a2;
       border-radius: 10px;
-      background: rgba(134, 134, 134, 0.3);
-      padding: 5px 40px;
+      background: 0;
       transition: all .2s ease-out;
 
       &:hover {
@@ -177,8 +176,9 @@
       }
 
       .svg-inline--fa {
-        margin: 11px auto;
-      font-size: 24px;
+        margin: 0 0 0 10px;
+        font-size: 20px;
+        color: #848484;
       }
 
 

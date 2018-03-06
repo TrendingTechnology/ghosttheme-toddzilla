@@ -13,7 +13,7 @@
     border-radius: 60px;
 
     .svg-inline--fa {
-        vertical-align: -7px !important;
+        vertical-align: -8px !important;
     }
 
     &.twitter {
@@ -410,8 +410,7 @@
             color: #fff;
         }
 
-        &:hover {
-            background: #fff;
+          &:hover .svg-inline--fa {
             color: $quora_color;
         }
     }
@@ -424,8 +423,7 @@
             color: #fff;
         }
 
-        &:hover {
-            background: #fff;
+          &:hover .svg-inline--fa {
             color: $meetup_color;
         }
     }
@@ -438,8 +436,7 @@
             color: #fff;
         }
 
-        &:hover {
-            background: #fff;
+        &:hover .svg-inline--fa {
             color: $medium_color;
         }
     }
@@ -452,8 +449,7 @@
             color: #fff;
         }
 
-        &:hover {
-            background: #fff;
+        &:hover .svg-inline--fa {
             color: $pocket_color;
         }
     }
@@ -467,8 +463,7 @@
             color: #fff;
         }
 
-        &:hover {
-            background: #fff;
+        &:hover .svg-inline--fa {
             color: $codecademy_color;
         }
     }

@@ -3,7 +3,7 @@
 */
 .titleintro {
   margin-bottom: 20px;
-  padding: 85px 20px;
+  padding: 120px 20px;
   margin-top: -80px;
   border-radius: 0 0 8px 8px;
   background-size: cover;
@@ -139,8 +139,8 @@ aside .author_widget {
       background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));*/
 }
 
-.post-template .navwrap {
-  /*background: white;*/
+.post-template .toggle {
+  margin-right: 30px;
 }
 
 .featureheader {
@@ -149,7 +149,7 @@ aside .author_widget {
   width: 100%;
   height: 600px;
   background-color: #141313;
-      padding: 100px 0;
+  padding: 100px 0;
 
   &.featured {
     display: block;
@@ -183,8 +183,14 @@ aside .author_widget {
 
   .wrapper {
     z-index: 300;
-    position: relative;
-    top: 42%;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    right: 0;
+    text-align: center;
   }
 
   .title {
@@ -192,8 +198,8 @@ aside .author_widget {
 
     h1,
     h1 a {
-      font: 900 80px 'Avenir',Arial,Sans-Serif;
-      line-height: 80px;
+      font: 900 5.5vw 'Avenir',Arial,Sans-Serif;
+      line-height: 90px;
       display: block;
       color: #fff;
       text-align: center;
@@ -261,22 +267,23 @@ aside .author_widget {
   @media (max-width: 985px) {
     .title {
       width: auto;
-      max-width: 800px;
       margin: 0;
     }
   }
   @media (max-width: 810px) {
+    height: 500px;
+
     .tags {
       display: none;
     }
   }
   @media (max-width: 600px) {
-    height: 50%;
+    height: 300px;
 
     .title h1,
     .title h1 a {
       font-size: 36px;
-      line-height: 1;
+      line-height: 1.2;
     }
 
     .date {
@@ -327,6 +334,10 @@ aside .author_widget {
 
   .svg-inline--fa {
     margin-right: 5px;
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+    }
   }
   @media (max-width: 1040px) {
     margin: 20px 0 0;
@@ -446,7 +457,7 @@ aside .author_widget {
   background-color: #fff;
   border: 1px solid #ececec;
   overflow: visible;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 32%;
   position: relative;
   @media (max-width: 900px) {
@@ -455,6 +466,7 @@ aside .author_widget {
 
   @media (max-width: 600px) {
     height: 111px;
+    border: 1px solid #ececec;
   }
 
 
@@ -473,7 +485,7 @@ aside .author_widget {
     line-height: 23px;
     padding: 15px;
     position: relative;
-    border-radius: 4px 4px 0 0;
+    border-radius: 6px 6px 0 0;
     overflow: hidden;
     transition: opacity 0.3s ease-out;
 
