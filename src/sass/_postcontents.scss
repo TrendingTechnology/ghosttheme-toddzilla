@@ -2,6 +2,8 @@
     POST CONTENT
 */
 .postcontents {
+  position: relative;
+
   &.index .kg-card-markdown {
     * {
       display: none;
@@ -38,6 +40,7 @@
     height: auto;
     border-radius: 4px;
     border: 1px solid #ececec;
+    margin-top: -40px;
   }
 
   i {
@@ -115,7 +118,23 @@
   h2 a,
   h3,
   h3 a {
-    margin: 20px 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 30px 0 30px;
+    padding-bottom: 40px;
+    color: #696363;
+  }
+
+  p > .svg-inline--fa {
+    width: 1.5em;
+    height: 1.5em;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: -53px auto 0;
+    color: #696363;
   }
 
   .annotation {
