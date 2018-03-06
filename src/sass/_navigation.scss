@@ -354,9 +354,6 @@
       display: block;
     }
 
-    .main {
-      display: none;
-    }
   }
 }
 
@@ -718,11 +715,11 @@
 
   .mainnav {
     max-width: 1000px;
-width: 95%;
-margin: auto;
-display: block;
-right: 0;
-left: 0;
+    width: 100%;
+    margin: auto;
+    display: block;
+    right: 0;
+    left: 0;
   }
 }
 

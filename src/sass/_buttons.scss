@@ -199,6 +199,14 @@
     }
 }
 
+.tags_list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .tags_list,
 .tags_list li {
     margin: 0;
@@ -207,7 +215,7 @@
 }
 
 .tags_list li a {
-  font: 500 12px 'Montserrat', Arial, Sans-Serif;
+  font: 300 12px 'Montserrat', Arial, Sans-Serif;
   display: inline-block;
   float: left;
   margin: 0 6px 12px 0;

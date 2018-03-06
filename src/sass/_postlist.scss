@@ -59,10 +59,10 @@
   }
 
   article .footer .largesolid.orange {
-    border-radius: 10px;
+    border-radius: 8px;
     font-family: 'montserrat';
     float: right;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     background: #fff;
     margin: 0 auto 40px;
@@ -70,11 +70,14 @@
     display: block;
     border: 1px solid #b15d5d;
     color: #b15d5d;
-    transition: all 0.2s ease-out;
-    padding: 15px 60px;
+    transition: all .2s ease-out;
+    padding: 15px 50px;
 
     @media (max-width:600px) {
-          padding: 15px 28px;
+      font-size: 16px;
+      padding: 12px 23px;
+      border-radius: 6px;
+      font-weight: 400;
     }
 
 
@@ -227,7 +230,7 @@
     @media (max-width: 600px) {
       padding: 0 25px !important;
       height: 60px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       margin-top: 10px;
     }
   }
@@ -372,7 +375,7 @@
   box-shadow: 0 0 20px #e8e8e8;
 
   p {
-    padding: 0 20px;
+    padding: 0 30px;
 
     &.light {
       font-weight: 400;
@@ -496,7 +499,6 @@
     font-weight: 600;
     overflow: hidden;
     padding: 25px 40px 0 30px;
-    margin-top: 20px;
 
     .left {
       .svg-inline--fa {
@@ -588,7 +590,7 @@
 
 .home-template .postlist article .footer .left,
 .paged .postlist article .footer .left {
-  margin-top: 14px;
+  margin-top: 11px;
   @media (max-width: 1040px) {
     padding: 0;
   }

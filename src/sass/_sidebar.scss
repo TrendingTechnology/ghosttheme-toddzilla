@@ -258,7 +258,6 @@
 aside .author_widget {
   display: block !important;
   border-radius: 8px;
-      border-bottom: 0;
 
   .avatar {
     margin: 0 15px 0 0;
@@ -294,8 +293,9 @@ aside .author_widget {
   display: none;
 
   .gravatar {
-    max-width: 60px;
-    border-radius: 90px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
   }
 
   .details {
@@ -304,8 +304,8 @@ aside .author_widget {
   }
 
   .avatar {
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
     display: block;
     margin: 0 15px 0 0;
     float: left;
@@ -313,7 +313,7 @@ aside .author_widget {
 
   h3,
   h3 a {
-    font: 500 22px 'ovo',Arial,Sans-Serif;
+    font: 500 20px 'ovo',Arial,Sans-Serif;
     color: #2b2626;
     margin: 1px 0 -3px;
 
