@@ -33,6 +33,10 @@
     margin: 20px 0 0;
     line-height: 1.5;
     font-weight: 100;
+
+    img {
+      display: none;
+    }
   }
 
   img {
@@ -125,15 +129,15 @@
   }
 
   h2 {
-    margin: 50px 0;
+    margin: 58px 0;
     z-index: 1;
     position: relative;
     color: #6f6f6f;
   }
 
   p > .svg-inline--fa {
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     right: 0;
     left: 0;
     position: absolute;

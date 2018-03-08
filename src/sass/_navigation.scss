@@ -35,6 +35,11 @@
     margin: auto;
     position: relative;
 
+    .svg-inline--fa.fa-w-14 {
+    width: .7em;
+    /* margin-top: 10px; */
+}
+
     @media(max-width: 1040px){
       width: 100% !important;
     }
@@ -47,7 +52,7 @@
 
   .toggle {
     display: inline-block;
-    padding: 20px 0 20px 30px;
+    padding: 15px 0 5px 30px;
     transition: opacity 0.1s ease-out;
     opacity: 0.6;
     float: right;
@@ -89,7 +94,7 @@
     a {
       font: 500 18px 'Montserrat', Arial, Sans-Serif;
       display: block;
-      padding: 23px 24px;
+      padding: 15px 24px;
       color: #fff;
 
       @media(max-width: 800px) {
